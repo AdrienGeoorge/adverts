@@ -1,0 +1,13 @@
+Options +FollowSymlinks
+RewriteEngine On
+
+RewriteRule ^advert/show/([0-9]+)$   index.php?controller=advert&action=show&id=$1 [L]
+RewriteRule ^advert/create   index.php?controller=advert&action=create [L]
+RewriteRule ^advert/update/([0-9]+)$   index.php?controller=advert&action=update&id=$1 [L]
+RewriteRule ^advert/deleteImage/([0-9]+)$   index.php?controller=advert&action=deleteImage&id=$1 [L]
+
+RewriteRule ^user/login   index.php?controller=user&action=login [L]
+RewriteRule ^user/logout   index.php?controller=user&action=logout [L]
+RewriteRule ^user/profile   index.php?controller=user&action=profile [L]
+RewriteRule ^user/update   index.php?controller=user&action=update [L]
+RewriteRule ^user/adverts   index.php?controller=user&action=adverts [L]

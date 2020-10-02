@@ -1,0 +1,98 @@
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    vertical-align: top;
+    background: white;
+    padding: 1em;
+    border-radius: 1em;
+    width: 100%;
+    margin: 1em 0;
+}
+
+.form-field {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    border-radius: 6px;
+    color: black;
+    border: 1px solid #d8d8d8;
+    background: #f8f8f8;
+    transition: border .3s ease;
+}
+
+.form-field::placeholder {
+    color: #CBD1DC;
+}
+
+.form-field:focus {
+    outline: none;
+    border-color: #bfbfbf;
+}
+
+.form-group {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 1em 0;
+}
+
+.form-group > label,
+.form-group .form-field {
+    white-space: nowrap;
+    display: block;
+}
+
+.form-group > label:first-child,
+.form-group .form-field:first-child {
+    border-radius: 6px 0 0 6px;
+}
+
+.form-group > label:last-child,
+.form-group .form-field:last-child {
+    border-radius: 0 6px 6px 0;
+}
+
+.form-group > label:not(:first-child),
+.form-group .form-field:not(:first-child) {
+    margin-left: -1px;
+}
+
+.form-group .form-field {
+    position: relative;
+    z-index: 1;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.form-group > label {
+    text-align: center;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #656565;
+    background: #ecebeb;
+    border: 1px solid #d8d8d8;
+    transition: background .3s ease, border .3s ease, color .3s ease;
+}
+
+.form-group:focus-within > label {
+    background: #d4d3d3;
+    border-color: #bfbfbf;
+}
+
+.profile--image {
+    height: 10em;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.5em;
+    margin: auto;
+}
